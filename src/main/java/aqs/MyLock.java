@@ -85,7 +85,9 @@ public class MyLock implements Lock {
 	}
 
 	@Override
-	public Condition newCondition() {		return sync.newCondition();
+	public Condition newCondition() {
+		
+		return sync.newCondition();
 	}
 
 }
